@@ -1,2 +1,3 @@
-# mohamed-elaynouni-classname
+# mohamed-elaynouni-jupiter
 Portfolio project for Intro to Programming course
+
