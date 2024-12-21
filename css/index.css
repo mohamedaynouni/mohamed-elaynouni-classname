@@ -51,7 +51,7 @@ a.logo {
     transform-origin: top;
     -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
     animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-    background-image: url(https://demo.templateflip.com/super/images/wave-bg.svg);
+    background-image: url(../img/wave-bg.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
