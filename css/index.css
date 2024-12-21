@@ -5,74 +5,262 @@ body {
 }
 
 body {
-    background-color: #f5f5f5; 
+    background-color: #fff; 
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+}
+header {
+    background: #f5f6f8;
+    padding-top: .36em;
+    padding-bottom: .36em;
+    position: relative; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    transition: all 0.3s ease;
+}
+.fixed-header {
+    position: fixed; 
+    background: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+   
+}
+.top-header {
+    background: #f5f6f8;
+}
+.container {
+    max-width: 1020px;
+    margin-right: auto;
+    margin-left: auto;
+}
+a.logo {
+    color: rgba(0, 0, 0, .9);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-decoration: none;
+    margin-top: 12px;
+}
+.wave-bg {
+    display: block;
+    height: 220px;
+    width: 100%;
+    min-width: 600px;
+    transform-origin: top;
+    -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    background-image: url(https://demo.templateflip.com/super/images/wave-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.header {
-
-    background-color: #ffffff;
+#About {
+    background-color: #f5f6f8;
     text-align: center;
     padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    max-width: 800px;
-    margin: 10px auto;
+    display: flex;
+    max-width: 1020px;
+    margin: 0px auto;
 }
 
-.header h1 {
+#About h1 {
     color: #007acc; 
     font-size: 2.5rem;
     font-weight: bold;
+    text-align: left;
+    margin: 0;
 }
 
-.header p {
-    font-size: 1.2rem;
-    font-style: italic;
+#About  p {
     color: #555;
+    text-align: left;
 }
 
-.header img {
-    width: 120px;
-    border-radius: 50%;
+#About img {
+    width: 213px;
+    border-radius: 11%;
     margin-bottom: 10px;
     float: left;
+    padding-right: 10px;
 }
 
+#About ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+#About .image {
+    width: 25%;
+    float: left;
+}
+#About .text {
+    width: 75%;
+    float: right;
+}
+a.btn {
+    color: #000;
+    background-color: #f6e05e;
+    border-color: #f6e05e;
+    padding: 12px;
+    border-radius: 14px;
+    text-decoration: none;
+    float: right;
+}
+nav {
+    float: right;
+    margin-top: 12px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-#About {
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 800px;
-    text-align: justify;
-    border-left: 5px solid #007acc;
-    background-color: #ffffff;
-    border-radius: 10px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 
 #Experience {
-    background-color: #f0f8ff; 
+    background-color: #fff; 
     padding: 20px;
     margin: 10px auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 10%);
+    max-width: 1024px;
 }
 
 #Experience h2 {
-    color: #007acc;
     font-size: 1.8rem;
+    text-align: center;
+}
+#Experience h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #f3d250;
+    margin: 10px auto 0;
+}
+#Experience .col1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 15px;
+}
+#Experience .card1 {
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid #f4f6f8;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#Experience .card-header {
+    background-color: #f4f6f8;
+    border-bottom: 2px solid #f4f6f8;
+    height: 44px;
 }
 
-#Experience ul {
-    list-style: none;
-    padding: 0;
+#Experience .icon {
+    float: right;
+}
+#Experience .icon i {
+    font-size: 34px;
+    padding-right: 11px;
+    margin-top: 6px;
+}
+#Experience h3.h5 {
+    margin: 0;
+    padding: 10px;
+    float: left;
+}
+#Experience .card2 {
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid #f4f6f8;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#Experience .card-body {
+    padding-right: 2rem ;
+    padding-left: 2rem ;
+}
+#Skills {
+    background-color: #f4f6f8; 
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 1024px;
 }
 
-#Experience li {
+#Skills h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+#Skills h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #f3d250;
+    margin: 10px auto 0;
+}
+#Skills .Skills-1 {
+    flex: 0 0 auto;
+    width: 45%;
+    float: left;
+}
+.Skills-2 {
+    flex: 0 0 auto;
+    width: 45%;
+    margin-left: 50%;
+}
+#Skills .py-1 {
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+}
+.d-flex {
+    display: flex !important;
+    margin-right: auto !important;
+}
+.d-flex span {
+    margin-left: auto;
+}
+.my-1 {
+    margin-top: .5rem !important;
+}
+.progress {
+    display: flex
+;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+.bg-primary {
+    background-color: #f6e05e !important;
+}
+.progress-bar {
+    background: #f6e15e;
+}
+#Skills li {
     background: #ffffff;
     margin: 10px 0;
     padding: 10px;
@@ -80,20 +268,151 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-#Connect {
-    background-color: #f0f8ff;
+#Services {
+    background-color: #fff; 
     padding: 20px;
     margin: 10px auto;
-    max-width: 800px;
-    border-radius: 10px;
+    max-width: 1020px;
+}
+
+#Services h2 {
+    font-size: 1.8rem;
     text-align: center;
-    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 10%);
+}
+#Services h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #f3d250;
+    margin: 10px auto 0;
+}
+
+#Services p {
+    text-align: center;
+}
+#Services .col4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+#Services .icon {
+    text-align: center;
+}
+#Services .icon i {
+    font-size: 78px;
+    margin-bottom: 12px;
+}
+/* Portfolio Section Styling */
+#Portfolio {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #ffffff;
+}
+
+#Portfolio h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#Portfolio h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #f3d250;
+    margin: 10px auto 0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+}
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item:hover figcaption {
+    opacity: 1;
+}
+
+figcaption h4 {
+    font-size: 1.2rem;
+    margin: 0 0 5px;
+}
+
+figcaption p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#Connect {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 1020px;
+
 }
 #Connect h2 {
-    color: #007acc;
     font-size: 1.8rem;
-    text-align: left;
+    text-align: center;
+}
+#Portfolio h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #f3d250;
+    margin: 10px auto 0;
 }
 #Connect ul {
     list-style: none;
@@ -109,4 +428,92 @@ body {
 #Connect a:hover {
     color: #005f99;
     text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.social-icon {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0073e6;
+}
+.div-form {
+    display: grid
+;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+/* Contact Form Styles */
+#Connect form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+#Connect form div {
+    margin-bottom: 15px;
+}
+
+#Connect form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#Connect form input,
+#Connect form textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#Connect form input:focus,
+#Connect form textarea:focus {
+    border-color: #007BFF;
+}
+
+#Connect form button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #212529;
+    background: #f6e05e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#Connect form button:hover {
+    background: #004085;
+}
+
+#Connect form button:active {
+    background: #004085;
+}
+
+footer {
+    background-color: #f4f6f8;
+    color: #212529;
+    padding: 40px 20px;
+    text-align: center;
 }
