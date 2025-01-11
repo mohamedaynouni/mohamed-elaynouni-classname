@@ -7,8 +7,6 @@ const footer = document.querySelector("footer");
 const copyright = document.createElement("div");
 copyright.classList.add("footer-content");
 copyright.innerHTML = `&copy; Mohamed El Aynouni.  All Rights Reserved ${thisYear}`;
-
-
 footer.appendChild(copyright);
 
 // Create skills section using the DOM 
