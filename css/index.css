@@ -59,7 +59,7 @@ a.logo {
 #About {
     background-color: #f5f6f8;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px 0px 20px;
     display: flex;
     max-width: 1020px;
     margin: 0px auto;
@@ -221,16 +221,15 @@ nav ul li a:hover {
     background-color: #f3d250;
     margin: 10px auto 0;
 }
-#Skills .Skills-1 {
-    flex: 0 0 auto;
-    width: 45%;
-    float: left;
+
+div#skillsSection {
+    display: grid
+;
+    grid-template-columns: repeat(auto-fit, minmax(49%, 2fr));
+    gap: 20px;
+    margin-top: 30px;
 }
-.Skills-2 {
-    flex: 0 0 auto;
-    width: 45%;
-    margin-left: 50%;
-}
+
 #Skills .py-1 {
     padding-top: .5rem !important;
     padding-bottom: .5rem !important;
@@ -396,7 +395,9 @@ figcaption p {
     font-size: 0.9rem;
     margin: 0;
 }
-
+figcaption a {
+    color: #027acc;
+}
 #Connect {
     background-color: #fff;
     padding: 20px;
@@ -554,7 +555,7 @@ footer {
         display: none; 
         background-color: #fff;
         position: absolute;
-        top: 60px; 
+        top: 40px; 
         left: 0;
         width: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

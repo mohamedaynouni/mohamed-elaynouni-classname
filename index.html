@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A personal portfolio">
+    <meta name="description" content="Mohamed El aynouni portfolio">
     <meta name="author" content="Mohamed El aynouni">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/script.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <title>Mohamed's Portfolio</title>
+    <title>Mohamed El aynouni portfolio</title>
 </head>
 <body>
      <!-- Navigational Header -->
      <header>
         <div class="container">
-                <a class="logo" href="#">My Folio</a>
+                <a class="logo" href="index.html"><img src="img/logo.png" style="width: 100px; "></a>
                 <div class="toggle_btn" id="jeg_mobile_toggle">
                     <span></span>
                     <span></span>
@@ -117,47 +117,8 @@
             </div>
         </section>
         <section id="Skills">
-            <h2>Skills</h2>
-            <div class="Skills-1">
-                <div class="py-1">
-                    <div class="d-flex">HTML5<span>90%</span></div>
-                    <div class="progress my-1">
-                    <div class="progress-bar"  style="width: 90%" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="py-1">
-                    <div class="d-flex">CSS3<span>90%</span></div>
-                    <div class="progress my-1">
-                    <div class="progress-bar"  style="width: 90%" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="py-1">
-                    <div class="d-flex">JavaScript<span>70%</span></div>
-                    <div class="progress my-1">
-                    <div class="progress-bar"  style="width: 70%" aria-valuemax="100"></div>
-                    </div>
-                </div>
-           </div>
-           <div class="Skills-2">
-            <div class="py-1">
-                <div class="d-flex"> PHP <span>70%</span></div>
-                <div class="progress my-1">
-                <div class="progress-bar"  style="width: 70%" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="py-1">
-                <div class="d-flex">WordPress<span>70%</span></div>
-                <div class="progress my-1">
-                <div class="progress-bar"  style="width: 70%" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="py-1">
-                <div class="d-flex">Photoshop<span>90%</span></div>
-                <div class="progress my-1">
-                <div class="progress-bar"  style="width: 90%" aria-valuemax="100"></div>
-                </div>
-            </div>
-       </div>
+            <h2>Skills</h2> 
+            <div id="skillsSection"></div>
         </section>
         <section id="Portfolio">
             <h2>Portfolio</h2>
@@ -166,21 +127,21 @@
                     <img src="img/site1.png" alt="Portfolio Item 1">
                     <figcaption>
                         <h4>FSJES Cours</h4>
-                        <p>www.fsjescours.com</p>
+                        <p><a href="https://www.fsjescours.com/">www.fsjescours.com</a></p>
                     </figcaption>
                 </div>
                 <div class="portfolio-item">
                     <img src="img/site2.png" alt="Portfolio Item 2">
                     <figcaption>
                         <h4>Analkhabar Newspaper</h4>
-                        <p>www.analkhabar.com</p>
+                        <p><a href="https://www.analkhabar.com/">www.analkhabar.com</a></p>
                     </figcaption>
                 </div>
                 <div class="portfolio-item">
                     <img src="img/site3.png" alt="Portfolio Item 3">
                     <figcaption>
                         <h4>Estifada Magazine</h4>
-                        <p>www.estifada.net</p>
+                        <p><a href="https://www.estifada.net/">www.estifada.net</a></p>
                     </figcaption>
                 </div>
             </div>
@@ -190,7 +151,7 @@
             <h2>Contact Me</h2>
             <div class="div-form">
                 <div class="form">
-                <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <form action="https://formspree.io/f/mjkkjobb" method="POST">
                     <div>
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -222,10 +183,8 @@
         <footer>
             <div class="container">
                 <div class="footer-content">
-                <div class="footer-bottom">
-                    <p>&copy; 2024 Mohamed El Aynouni. All Rights Reserved.</p>
-                </div>
             </div>
+        <script src="js/index.js"></script>
         </footer>
 
 </body>
